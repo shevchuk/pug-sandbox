@@ -1,12 +1,46 @@
 doctype html  
 html(lang='en')  
  head
-   style 
-        include js/bootstrap.min.js
-        include css/bootstrap.min.css
-        link(rel='stylesheet', href='https://getbootstrap.com/docs/4.0/examples/grid/grid.css')
+   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css')
+
    title Pug
  body
+   script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
+   script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+   script(src='js/bootstrap.js')
+    
+   h2 Sample page
+   div.container
+        nav.navbar.navbar-expand-sm.bg-light
+            a.navbar-brand(href='#')
+                img(src='pics/2.JPG'
+                    height=30
+                )
+            ul.navbar-nav
+                li.nav-item
+                    a.nav-link(href='#') Link 1
+                li.nav-item
+                    a.nav-link(href='#') Link 2
+                li.nav-item
+                    a.nav-link(href='#') Link 3
+                li.nav-item
+                    a.nav-link(href='#') Link 4
+
+        h1 Special header
+
+        input(type='input')
+        span.pl-1
+            button.btn.btn-primary(
+                type='button') Search
+
+
+        ul
+            li New Zealand
+            li Singapore
+            li Vietnam
+            li Thailand
+
+
    h2 Sample #1
    div.container
     div.row
@@ -151,3 +185,8 @@ html(lang='en')
                 span Picture 5
             div.col-4
                 span Picture 6
+
+
+ h2 'Sample #3'
+    div.container
+        
